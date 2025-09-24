@@ -1,0 +1,1210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Tea Station</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="./assets/logo.png"
+    />
+
+    <!--------------- 
+
+    CSS
+    
+    ----------------->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="./css/showHideNav.css"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="./css/responsive-tabs.css"
+    />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./css/animated-counter-prograssbar.css"
+    />
+    <link
+      href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+      rel="stylesheet"
+    />
+    <link
+      href="./css/animation.css"
+      rel="stylesheet"
+    />
+    <link
+      href="./dist/output.css"
+      rel="stylesheet"
+    />
+
+    <!-- FONT -->
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- JQuery -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      defer
+    ></script>
+
+    <!--------------- 
+
+    Scripts
+    
+    ----------------->
+    <script
+      src="./js/jquery.hidescroll.js"
+      defer
+    ></script>
+    <script
+      src="./js/jquery.responsiveTabs.js"
+      defer
+    ></script>
+    <script
+      defer
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script
+      src="./js/animated-counter-prograssbar.js"
+      defer
+    ></script>
+    <script
+      defer
+      src="https://unpkg.com/counterup2@2.0.2/dist/index.js"
+    ></script>
+    <script
+      defer
+      src="https://unpkg.com/aos@2.3.1/dist/aos.js"
+    ></script>
+    <script
+      defer
+      type="module"
+      src="./js/main.js"
+    ></script>
+  </head>
+  <body>
+    <!----------------- 
+        Navigation
+    ------------------>
+    <header class="relative z-50">
+      <div class="flex items-center justify-center navbar">
+        <div
+          class="max-w-[1536px] w-full px-4 py-4 md:py-10 md:px-[72px] flex items-center justify-between"
+        >
+          <!-- Logo -->
+          <a
+            href="./"
+            class="flex items-center justify-center flex-none"
+          >
+            <img
+              src="./assets/logo_ecoplant.png"
+              alt="logo"
+              class="w-30.2 h-6"
+            />
+            <!-- <p class="text-lg capitalize font-lobster text-p-900">Ecoplant</p> -->
+          </a>
+
+          <!-- Nav Links -->
+          <nav class="items-center justify-end hidden w-full gap-4 lg:flex lg:gap-8">
+            <!-- <a
+              href="./products.html"
+              class="navLink"
+              >Sản Phẩm</a
+            > -->
+            <a
+              href="./#story"
+              class="navLink"
+              >Giới Thiệu</a
+            >
+            <a
+              href="./#contact"
+              class="navLink"
+              >Liên Hệ</a
+            >
+          </nav>
+
+          <!-- Hamburger Icon -->
+          <div
+            class="block cursor-pointer lg:hidden"
+            id="toggle_btn"
+          >
+            <img
+              src="./assets/Menu Icon.svg"
+              alt="hamburger icon"
+              class="size-5"
+            />
+          </div>
+
+          <!-- Mobile Menu -->
+          <div class="dropdown-menu lg:hidden">
+            <!-- <a
+              href="./products.html"
+              class="navLink mobileNavLink"
+              >Sản Phẩm</a
+            > -->
+            <a
+              href="#story"
+              class="navLink mobileNavLink"
+              >Giới Thiệu</a
+            >
+            <a
+              href="#contact"
+              class="navLink mobileNavLink"
+              >Liên Hệ</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!----------------- 
+        Hero 
+    ------------------>
+    <section
+      id="hero"
+      class="h-screen max-h-[1100px] bg-gradient-to-t from-p-100 to-white overflow-y-clip"
+    >
+      <div
+        class="container relative flex items-center justify-center w-full h-full xl:justify-start"
+      >
+        <!-- hình -->
+        <div
+          data-aos="fade-left"
+          class="absolute bottom-0 right-0 z-0 overflow-hidden md:-bottom-40 xl:top-1/2 xl:-translate-y-1/2"
+        >
+          <img
+            src="./assets/hero_image_1.png"
+            alt="hero-img"
+            class="h-full 2xl:[mask-image:linear-gradient(to_left,transparent,black_10%)]"
+          />
+        </div>
+
+        <!-- nội dung chính -->
+
+        <div
+          class="z-10 flex flex-col items-center justify-center gap-4 md:gap-9 xl:items-start"
+        >
+          <div>
+            <h2
+              data-aos="zoom-in"
+              class="mb-2 text-xs font-semibold leading-none tracking-wider text-center uppercase font-inter md:text-sm xl:text-start"
+            >
+
+              <span class="text-xs text-gradient md:text-sm">Ecoplant</span>
+
+            </h2>
+            <h1
+              data-aos="zoom-in"
+              data-aos-delay="100"
+              class="text-5xl leading-none tracking-tight text-center capitalize font-inter font-bold text-p-900 md:text-6xl lg:text-7xl"
+            >
+              Từ đất trở về đất
+            </h1>
+          </div>
+
+          <p
+            data-aos="zoom-in"
+            data-aos-delay="200"
+            class="max-w-xl px-4 text-center text-n-700 md:px-0 xl:text-start"
+          >
+           Sứ mệnh của chúng tôi là mang đến cho bạn một lối sống xanh và cân bằng thông qua những sản phẩm thực phẩm bền vững, được sáng tạo từ nguyên liệu tái chế và tự nhiên, nhằm nâng cao sức khỏe, bảo vệ môi trường và khơi dậy sự kết nối hài hòa giữa con người với thiên nhiên.
+          </p>
+
+          <button
+            data-aos="zoom-in"
+            data-aos-delay="300"
+          >
+            <a
+              class="btn"
+              href="#products"
+              >Tìm Hiểu Sản Phẩm
+              <img
+                src="./assets/right-arrow.svg"
+                alt="right arrow"
+            /></a>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!----------------- 
+        Partner Logos 
+    ------------------>
+ 
+
+    <!----------------- 
+        Products
+    ------------------>
+    <section id="products">
+      <div class="container">
+        <div class="flex flex-col gap-9">
+          <!-- heading -->
+          <div
+            data-aos="fade-right"
+            class="mt-10"
+          >
+            <h2 class="sub_heading">sản phẩm</h2>
+            <h1 class="main_heading">
+             bộ kit trồng cây từ  <span class="text-gradient"> giá thể bã cà phê</span>
+            </h1>
+          </div>
+          <!-- tabs -->
+          <div id="products-tabs">
+            <ul
+              class="flex bg-p-50 px-4 md:px-10 xl:px-[200px] py-4 md:py-6 gap-4 md:gap-8 justify-center mb-9 text-center"
+            >
+              <li>
+                <a
+                  href="#matcha"
+                  class="tab-link"
+                  ><span>EcoPlant </span>Basic</a
+                >
+              </li>
+
+              <li>|</li>
+              <li>
+                <a
+                  href="#whiteTea"
+                  class="tab-link"
+                  ><span>EcoPlant </span> Edu</a
+                >
+              </li>
+
+              <li>|</li>
+              <li>
+                <a
+                  href="#oolongTea"
+                  class="tab-link"
+                  ><span>EcoPlant </span> Giftset</a
+                >
+              </li>
+
+              <li>|</li>
+              <li>
+                <a
+                  href="#blackTea"
+                  class="tab-link"
+                  ><span>EcoPlant</span> Season</a
+                >
+              </li>
+            </ul>
+
+            <div id="matcha">
+              <div class="tabContainer">
+                <img
+                  src="./assets/ecoplant_basic.png"
+                  alt="matcha"
+                  class="productImg"
+                />
+
+                <div>
+                  <h3>EcoPlant Basic</h3>
+                  <h4>
+                      Khởi đầu hành trình sống xanh của bạn cùng EcoPlant Basic.
+                  </h4>
+                  <p>
+                
+Được chế tạo từ những nguyên liệu tái chế tự nhiên, bộ sản phẩm cơ bản này mang đến sự đơn giản, tiện lợi và gần gũi cho mọi gia đình. EcoPlant Basic giúp bạn tiếp cận lối sống bền vững theo cách nhẹ nhàng, dễ áp dụng nhưng vẫn đầy cảm hứng.
+Hãy để từng bước nhỏ cùng EcoPlant Basic mở ra sự thay đổi tích cực cho sức khỏe, môi trường và tương lai xanh của chúng ta.
+                    <br />
+                  </p>
+                  <!-- <button>
+                    <a
+                      href="/products.html?filter-category=matcha"
+                      class="btn"
+                      >Xem Sản Phẩm Matcha
+                      <img
+                        src="./assets/right-arrow.svg"
+                        alt="right-arrow"
+                    /></a>
+                  </button> -->
+                </div>
+              </div>
+            </div>
+            <div id="whiteTea">
+              <div class="tabContainer">
+                <img
+                  src="./assets/ecoplant_edu.png"
+                  alt="whitetea"
+                  class="productImg"
+                />
+
+                <div>
+                  <h3>EcoPlant Edu</h3>
+                  <h4>
+                   Khám phá tri thức xanh cùng EcoPlant Edu.
+                  </h4>
+                  <p>
+                   Đây không chỉ là một sản phẩm, mà còn là công cụ giáo dục, truyền cảm hứng cho thế hệ trẻ về bảo vệ môi trường và sáng tạo bền vững. Với sự kết hợp giữa trải nghiệm thực hành và kiến thức khoa học, EcoPlant Edu biến những khái niệm khô khan thành hành trình học tập thú vị và đầy ý nghĩa.
+Cùng EcoPlant Edu, bạn gieo những hạt mầm hiểu biết và trách nhiệm để kiến tạo một thế hệ yêu thiên nhiên và hành động vì hành tinh.
+                  </p>
+                  <!-- <button>
+                    <a
+                      href="/products.html?filter-category=whitetea"
+                      class="btn"
+                      >Xem Sản Phẩm Trà Trắng
+                      <img
+                        src="./assets/right-arrow.svg"
+                        alt="right-arrow"
+                    /></a>
+                  </button> -->
+                </div>
+              </div>
+            </div>
+            <div id="oolongTea">
+              <div class="tabContainer">
+                <img
+                  src="./assets/ecoplant_giftset.png"
+                  alt="oolong"
+                  class="productImg"
+                />
+
+                <div>
+                  <h3>EcoPlant Giftset</h3>
+                  <h4>
+                  Gửi trao yêu thương qua những món quà xanh cùng EcoPlant Giftset.
+                  </h4>
+                  <p>
+                 Được thiết kế tinh tế với thông điệp “trao quà – trao sự bền vững”, bộ quà tặng này mang lại không chỉ giá trị vật chất mà còn lan tỏa ý nghĩa về lối sống thân thiện môi trường. Mỗi món trong Giftset đều chứa đựng sự chu đáo, sáng tạo và niềm tin vào một tương lai bền vững.
+EcoPlant Giftset chính là cách tinh tế để bạn gắn kết, sẻ chia và cùng nhau lan rộng tinh thần sống xanh.
+                  </p>
+                  <!-- <button>
+                    <a
+                      href="/products.html?filter-category=oolong"
+                      class="btn"
+                      >Xem Sản Phẩm Trà Ô Long
+                      <img
+                        src="./assets/right-arrow.svg"
+                        alt="right-arrow"
+                    /></a>
+                  </button> -->
+                </div>
+              </div>
+            </div>
+            <div id="blackTea">
+              <div class="tabContainer">
+                <img
+                  src="./assets/ecoplant_season.png"
+                  alt="blacktea"
+                  class="productImg"
+                />
+
+                <div>
+                  <h3>EcoPlant Season</h3>
+                  <h4>Tận hưởng sự đa dạng và tươi mới qua EcoPlant Season.</h4>
+                  <p>
+                    Mỗi mùa trong năm đều mang đến những hương sắc và cảm hứng riêng – và EcoPlant Season tái hiện trọn vẹn điều đó trong từng sản phẩm. Từ sắc xuân rực rỡ, hạ tươi mát, thu ấm áp đến đông tĩnh lặng, bạn sẽ được trải nghiệm một hành trình sống xanh phong phú, đổi mới không ngừng.
+EcoPlant Season chính là lựa chọn dành cho những ai muốn tận hưởng sự cân bằng tự nhiên và cảm nhận nhịp điệu bền vững theo vòng quay của đất trời.
+                  </p>
+                  <!-- <button>
+                    <a
+                      href="/products.html?filter-category=blacktea"
+                      class="btn"
+                      >Xem Sản Phẩm Trà Đen
+                      <img
+                        src="./assets/right-arrow.svg"
+                        alt="right-arrow"
+                    /></a>
+                  </button> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!----------------- 
+        Slogan
+    ------------------>
+
+    <!----------------- 
+        Features
+    ------------------>
+    <section id="features">
+      <div class="container relative m-20 text-center">
+        <!-- hàng đầu -->
+        <div
+          class="flex flex-col items-center justify-center w-full gap-0 lg:gap-10 lg:flex-row"
+        >
+          <div
+            data-aos="zoom-in"
+            class="feature-card group bg-[url(/assets/benefit_1.jpg)]"
+          >
+            <div class="feature-filter"></div>
+
+            <h3>Nguyên liệu tái chế – giá trị kép</h3>
+            <p>
+              Giá thể làm từ bã cà phê – một loại phế phẩm thường bị bỏ đi.
+Vừa giảm thiểu rác thải, vừa biến thành nguồn tài nguyên hữu ích cho việc trồng cây.
+            </p>
+          </div>
+
+          <div
+            data-aos="zoom-in"
+            data-aos-delay="400"
+            class="order-first bg-p-50 feature-card lg:order-none lg:bg-transparent"
+          >
+            <div>
+              <h2 class="sub_heading">Why Us?</h2>
+              <h1 class="leading-loose text-center main_heading">
+                Sự <span class="text-gradient">độc đáo </span>từ<br />
+                EcoPlant
+              </h1>
+            </div>
+          </div>
+
+          <div
+            data-aos="zoom-in"
+            data-aos-delay="100"
+            class="feature-card group bg-[url(/assets/pic1.jpg)]"
+          >
+            <div class="feature-filter"></div>
+
+            <h3>Giàu dinh dưỡng tự nhiên</h3>
+            <p>
+            Bã cà phê có chứa nitơ, kali, magiê… giúp cây phát triển tốt hơn.
+
+Không cần phân bón hóa học, thân thiện và an toàn cho cả người trồng lẫn môi trường.
+            </p>
+          </div>
+        </div>
+
+        <!-- hàng thứ 2 -->
+
+        <div
+          class="flex flex-col items-center justify-center w-full lg:-mt-20 lg:gap-10 lg:flex-row"
+        >
+          <div
+            data-aos="zoom-in"
+            data-aos-delay="200"
+            class="feature-card group bg-[url(/assets/benefit_3.jpg)]"
+          >
+            <div class="feature-filter"></div>
+
+            <h3>Trải nghiệm “trồng xanh – sống xanh”</h3>
+            <p>
+              Người dùng không chỉ gieo mầm cây, mà còn tham gia trực tiếp vào một hành động tái chế.
+
+Mỗi bộ kit trở thành một công cụ truyền cảm hứng về lối sống bền vững.
+
+            </p>
+          </div>
+
+          <div
+            data-aos="zoom-in"
+            data-aos-delay="300"
+            class="feature-card group bg-[url(/assets/benefit_4.jpg)]"
+          >
+            <div class="feature-filter"></div>
+
+            <h3>Thiết kế tiện lợi & ý nghĩa</h3>
+            <p>
+            Đóng gói thành bộ kit nhỏ gọn, dễ sử dụng cho mọi lứa tuổi.
+
+Vừa để học tập, vừa làm quà tặng xanh độc đáo, mang thông điệp “từ rác thải đến sự sống”.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!----------------- 
+       Best Sellers
+    ------------------>
+    <section id="best-sellers">
+      <div class="container my-20">
+        <!-- tiêu đề -->
+        <div class="flex flex-col items-start md:items-center lg:items-start">
+          <div data-aos="fade-right">
+            <h2 class="sub_heading">Khách hàng yêu thích</h2>
+            <h2 class="main_heading">
+              Những Bộ Kit Trồng Cây <span class="text-gradient">Bán Chạy Nhất</span>
+            </h2>
+          </div>
+
+          <p
+            data-aos="fade-right"
+            data-aos-delay="100"
+            class="max-w-lg pr-16 mt-2 text-xs text-start md:text-center lg:text-start text-n-500"
+          >
+            Khám phá những bộ kit trồng cây từ bã cà phê được yêu thích nhất của chúng tôi – nơi sự sáng tạo trong tái chế gặp gỡ niềm vui gieo trồng. Hãy cùng hàng trăm khách hàng đã biến việc trồng cây thành thói quen xanh mỗi ngày, và cảm nhận sự gắn kết với thiên nhiên từ chính ngôi nhà của bạn!
+          </p>
+        </div>
+
+        <!-- carousel sản phẩm  -->
+        <div class="lg:px-4 md:x-2 mt-9 slider">
+          <!-- sản phẩm 1 -->
+          <div class="!flex flex-col lg:flex-row items-center justify-between">
+            <!-- phần bên trái -->
+            <div class="flex-1 best-product--left">
+              <div class="best-product-info">
+                <h3>        🌱EcoPlant Basic</h3>
+                <p>
+Bộ kit trồng cây cơ bản dành cho những ai muốn bắt đầu hành trình xanh một cách đơn giản và gần gũi. Với giá thể từ bã cà phê giàu dinh dưỡng, EcoPlant Basic giúp bạn dễ dàng gieo mầm, chăm sóc và tận hưởng niềm vui trồng cây ngay tại nhà.
+                </p>
+              </div>
+
+              <!-- thanh tiến trình -->
+              <div
+                class="benefit-bars"
+                id="firstbar"
+              >
+                <!-- hàng trên -->
+                <div>
+                  <div class="flex-1 progressbar-item">
+                    <h4 class="progress-title">
+                      Dễ sử dụng, phù hợp mọi lứa tuổi 
+                    </h4>
+                    <div
+                      progress-bar
+                      data-percentage="90%"
+                    >
+                      <div class="progress-number">
+                        <div class="progress-number-mark">
+                          <span class="percent"></span>
+                          <span class="down-arrow"></span>
+                        </div>
+                      </div>
+                      <div class="progress-bg">
+                        <div class="progress-fill"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex-1 progressbar-item">
+                    <h4 class="progress-title">Giàu dinh dưỡng tự nhiên cho cây </h4>
+                    <div
+                      progress-bar
+                      data-percentage="93%"
+                    >
+                      <div class="progress-number">
+                        <div class="progress-number-mark">
+                          <span class="percent"></span>
+                          <span class="down-arrow"></span>
+                        </div>
+                      </div>
+                      <div class="progress-bg">
+                        <div class="progress-fill"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- hàng dưới -->
+                <div>
+                  <div class="flex-1 progressbar-item">
+                    <h4 class="progress-title">Tiết kiệm chi phí, thân thiện môi trường </h4>
+                    <div
+                      progress-bar
+                      data-percentage="88%"
+                    >
+                      <div class="progress-number">
+                        <div class="progress-number-mark">
+                          <span class="percent"></span>
+                          <span class="down-arrow"></span>
+                        </div>
+                      </div>
+                      <div class="progress-bg">
+                        <div class="progress-fill"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex-1 progressbar-item">
+                    <h4 class="progress-title">Mang lại trải nghiệm gieo trồng thư giãn</h4>
+                    <div
+                      progress-bar
+                      data-percentage="91%"
+                    >
+                      <div class="progress-number">
+                        <div class="progress-number-mark">
+                          <span class="percent"></span>
+                          <span class="down-arrow"></span>
+                        </div>
+                      </div>
+                      <div class="progress-bg">
+                        <div class="progress-fill"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- phần bên phải -->
+            <div>
+              <img
+                src="./assets/ecoplant_basic.png"
+                alt="best-sellers-product"
+              />
+            </div>
+          </div>
+
+          <!-- sản phẩm 2 -->
+          <div class="!flex flex-col lg:flex-row items-center justify-between">
+            <!-- phần bên trái -->
+            <div class="flex-1 best-product--left">
+              <div class="best-product-info">
+                <h3>📘 EcoPlant Edu</h3>
+                <p>
+                Không chỉ là một bộ kit trồng cây, EcoPlant Edu còn là công cụ giáo dục giúp học sinh – sinh viên hiểu rõ hơn về khoa học môi trường và tái chế. Thông qua hoạt động gieo trồng thực tế, bạn vừa học vừa trải nghiệm, biến kiến thức thành hành động thiết thực.
+                </p>
+              </div>
+
+              <!-- thanh tiến trình -->
+              <div class="benefit-bars">
+                <!-- hàng trên -->
+                <div>
+                  <div class="flex-1 progressbar-item">
+                    <h4 class="progress-title">
+                      Kết hợp học tập & thực hành 
+                    </h4>
+                    <div
+                      progress-bar
+                      data-percentage="96%"
+                    >
+                      <div class="progress-number">
+                        <div class="progress-number-mark">
+                          <span class="percent"></span>
+                          <span class="down-arrow"></span>
+                        </div>
+                      </div>
+                      <div class="progress-bg">
+                        <div class="progress-fill"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex-1 progressbar-item">
+                    <h4 class="progress-title">Khơi gợi tư duy sáng tạo</h4>
+                    <div
+                      progress-bar
+                      data-percentage="97%"
+                    >
+                      <div class="progress-number">
+                        <div class="progress-number-mark">
+                          <span class="percent"></span>
+                          <span class="down-arrow"></span>
+                        </div>
+                      </div>
+                      <div class="progress-bg">
+                        <div class="progress-fill"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- hàng dưới -->
+                <div>
+                  <div class="flex-1 progressbar-item">
+                    <h4 class="progress-title">Tăng cường ý thức bảo vệ môi trường </h4>
+                    <div
+                      progress-bar
+                      data-percentage="90%"
+                    >
+                      <div class="progress-number">
+                        <div class="progress-number-mark">
+                          <span class="percent"></span>
+                          <span class="down-arrow"></span>
+                        </div>
+                      </div>
+                      <div class="progress-bg">
+                        <div class="progress-fill"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex-1 progressbar-item">
+                    <h4 class="progress-title">Trải nghiệm thú vị, dễ tiếp cận</h4>
+                    <div
+                      progress-bar
+                      data-percentage="89%"
+                    >
+                      <div class="progress-number">
+                        <div class="progress-number-mark">
+                          <span class="percent"></span>
+                          <span class="down-arrow"></span>
+                        </div>
+                      </div>
+                      <div class="progress-bg">
+                        <div class="progress-fill"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- phần bên phải -->
+            <div>
+              <img
+                src="./assets/ecoplant_edu.png"
+                alt="best-sellers-product"
+              />
+            </div>
+          </div>
+
+          <!-- sản phẩm 3 -->
+          <div class="!flex flex-col lg:flex-row items-center justify-between">
+            <!-- phần bên trái -->
+            <div class="flex-1 best-product--left">
+              <div class="best-product-info">
+                <h3>🎁 EcoPlant Giftset</h3>
+                <p>
+                 Một món quà không chỉ đẹp mắt mà còn đầy ý nghĩa. EcoPlant Giftset được thiết kế sang trọng, mang trong mình thông điệp “trao quà – trao sự sống xanh”. Mỗi bộ kit là một cách tinh tế để gắn kết, sẻ chia và lan tỏa tình yêu thiên nhiên.
+                </p>
+              </div>
+
+              <!-- thanh tiến trình -->
+              <div class="benefit-bars">
+                <!-- hàng trên -->
+                <div>
+                  <div class="flex-1 progressbar-item">
+                    <h4 class="progress-title">
+                      Thiết kế tinh tế, sang trọng
+                    </h4>
+                    <div
+                      progress-bar
+                      data-percentage="85%"
+                    >
+                      <div class="progress-number">
+                        <div class="progress-number-mark">
+                          <span class="percent"></span>
+                          <span class="down-arrow"></span>
+                        </div>
+                      </div>
+                      <div class="progress-bg">
+                        <div class="progress-fill"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex-1 progressbar-item">
+                    <h4 class="progress-title">Thông điệp ý nghĩa, bền vững </h4>
+                    <div
+                      progress-bar
+                      data-percentage="95%"
+                    >
+                      <div class="progress-number">
+                        <div class="progress-number-mark">
+                          <span class="percent"></span>
+                          <span class="down-arrow"></span>
+                        </div>
+                      </div>
+                      <div class="progress-bg">
+                        <div class="progress-fill"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- hàng dưới -->
+                <div>
+                  <div class="flex-1 progressbar-item">
+                    <h4 class="progress-title">Phù hợp làm quà tặng trong nhiều dịp</h4>
+                    <div
+                      progress-bar
+                      data-percentage="88%"
+                    >
+                      <div class="progress-number">
+                        <div class="progress-number-mark">
+                          <span class="percent"></span>
+                          <span class="down-arrow"></span>
+                        </div>
+                      </div>
+                      <div class="progress-bg">
+                        <div class="progress-fill"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex-1 progressbar-item">
+                    <h4 class="progress-title">Khuyến khích lối sống xanh</h4>
+                    <div
+                      progress-bar
+                      data-percentage="99%"
+                    >
+                      <div class="progress-number">
+                        <div class="progress-number-mark">
+                          <span class="percent"></span>
+                          <span class="down-arrow"></span>
+                        </div>
+                      </div>
+                      <div class="progress-bg">
+                        <div class="progress-fill"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- phần bên phải -->
+            <div>
+              <img
+                src="./assets/ecoplant_giftset.png"
+                alt="best-sellers-product"
+              />
+            </div>
+          </div>
+
+          <!-- sản phẩm 4 -->
+          <div class="!flex flex-col lg:flex-row items-center justify-between">
+            <!-- phần bên trái -->
+            <div class="flex-1 best-product--left">
+              <div class="best-product-info">
+                <h3>🍂 EcoPlant Season</h3>
+                <p>
+                  Lấy cảm hứng từ bốn mùa trong năm, EcoPlant Season mang đến trải nghiệm gieo trồng tươi mới và phong phú. Mỗi phiên bản là sự hòa quyện giữa nhịp điệu thiên nhiên và lối sống bền vững, giúp bạn tận hưởng cảm giác đổi thay theo mùa ngay trong không gian sống của mình.
+                </p>
+              </div>
+
+              <!-- thanh tiến trình -->
+              <div class="benefit-bars">
+                <!-- hàng trên -->
+                <div>
+                  <div class="flex-1 progressbar-item">
+                    <h4 class="progress-title">
+                     Trải nghiệm đa dạng theo mùa 
+                    </h4>
+                    <div
+                      progress-bar
+                      data-percentage="83%"
+                    >
+                      <div class="progress-number">
+                        <div class="progress-number-mark">
+                          <span class="percent"></span>
+                          <span class="down-arrow"></span>
+                        </div>
+                      </div>
+                      <div class="progress-bg">
+                        <div class="progress-fill"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex-1 progressbar-item">
+                    <h4 class="progress-title">Gắn kết với thiên nhiên </h4>
+                    <div
+                      progress-bar
+                      data-percentage="89%"
+                    >
+                      <div class="progress-number">
+                        <div class="progress-number-mark">
+                          <span class="percent"></span>
+                          <span class="down-arrow"></span>
+                        </div>
+                      </div>
+                      <div class="progress-bg">
+                        <div class="progress-fill"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- hàng dưới -->
+                <div>
+                  <div class="flex-1 progressbar-item">
+                    <h4 class="progress-title">Mang lại sự mới mẻ, không nhàm chán</h4>
+                    <div
+                      progress-bar
+                      data-percentage="97%"
+                    >
+                      <div class="progress-number">
+                        <div class="progress-number-mark">
+                          <span class="percent"></span>
+                          <span class="down-arrow"></span>
+                        </div>
+                      </div>
+                      <div class="progress-bg">
+                        <div class="progress-fill"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex-1 progressbar-item">
+                    <h4 class="progress-title">Tạo cảm hứng chăm sóc cây lâu dài </h4>
+                    <div
+                      progress-bar
+                      data-percentage="99%"
+                    >
+                      <div class="progress-number">
+                        <div class="progress-number-mark">
+                          <span class="percent"></span>
+                          <span class="down-arrow"></span>
+                        </div>
+                      </div>
+                      <div class="progress-bg">
+                        <div class="progress-fill"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- phần bên phải -->
+            <div>
+              <img
+                src="./assets/ecoplant_season.png"
+                alt="best-sellers-product"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!----------------- 
+       Stats
+    ------------------>
+    <section
+      id="stats"
+      class="relative mt-20 bg-fixed bg-center bg-no-repeat bg-cover bg-[url(/assets/statsBg.jpg)]"
+    >
+      <!-- overlay -->
+      <div class="absolute inset-0 bg-p-950/95"></div>
+
+      <!-- nội dung -->
+      <div
+        class="container relative z-10 flex flex-col items-center justify-center px-4 py-20 lg:py-28 gap-14 lg:gap-32 md:flex-row"
+      >
+       
+
+        <div class="stats-item">
+          <h1 class="counter">80%</h1>
+          <h2>Khách hàng hài lòng</h2>
+        </div>
+
+        <svg
+          viewBox="-1 -1 3 137"
+          width="3"
+          height="137"
+          class="hidden md:block"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+            <linearGradient
+              id="lineGradient"
+              x1="0"
+              y1="0"
+              x2="-5.90104e-06"
+              y2="135"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop
+                stop-color="white"
+                stop-opacity="0"
+              />
+              <stop
+                offset="0.494792"
+                stop-color="white"
+              />
+              <stop
+                offset="1"
+                stop-color="white"
+                stop-opacity="0"
+              />
+            </linearGradient>
+          </defs>
+          <line
+            x1="0.5"
+            y1="0"
+            x2="0.5"
+            y2="135"
+            stroke="url(#lineGradient)"
+            stroke-opacity="0.3"
+            fill="none"
+          />
+        </svg>
+
+        <div class="stats-item">
+          <h1 class="counter">4.6/5</h1>
+          <h2>Điểm Đánh Giá Từ Khách Hàng</h2>
+        </div>
+      </div>
+    </section>
+
+    <!----------------- 
+      Story
+    ------------------>
+    <section id="story">
+      <!-- lớp chứa hình nền -->
+      <div
+        class="flex justify-end h-screen max-h-[1100px] p-0 w-full max-w-none bg-[url(/assets/aboutUsImg.jpg)] bg-no-repeat bg-center bg-cover"
+      >
+        <!-- lớp overlay chiếm 2/3 màn hình -->
+        <div class="w-full h-full lg:w-2/3 bg-p-950/60 p-9">
+          <div
+            class="container relative flex items-center justify-center h-full md:justify-end 2xl:justify-center"
+          >
+            <!-- watermark -->
+            <div
+              data-aos="fade-right"
+              class="absolute hidden -translate-y-1/2 translate-x-36 top-1/2 right-1/2 md:block 2xl:translate-x-0"
+            >
+              <h1
+                class="uppercase -rotate-90 text-[190px] text-center leading-[148px] font-bold text-p-50 opacity-20"
+              >
+               ECO<br />
+               PLAnt
+              </h1>
+            </div>
+
+            <!-- nội dung chính -->
+            <div
+              class="relative"
+              data-aos="fade-left"
+            >
+              <div class="mb-9">
+                <h2 class="!text-p-200 sub_heading">Khám phá</h2>
+                <h1 class="text-white main_heading">Câu chuyện & sứ mệnh</h1>
+              </div>
+
+              <p class="text-n-200 max-w-80">
+              EcoPlant ra đời từ nghịch lý tại Việt Nam, nơi hàng triệu tấn bã cà phê bị xem là rác thải. Với sứ mệnh biến nguồn tài nguyên bị lãng quên này thành những bộ kit trồng cây tiện lợi, chúng tôi giúp mọi nhà dễ dàng gieo mầm lối sống xanh, góp phần xây dựng một nền kinh tế tuần hoàn bắt đầu từ những hành động nhỏ bé nhất.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!----------------- 
+    Contact
+    ------------------>
+    <section id="contact">
+      <div class="container my-20">
+        <div class="flex flex-col w-full gap-10 lg:flex-row">
+          <!-- thông tin liên hệ -->
+          <div
+            class="flex h-[515px] flex-col items-center justify-center flex-1 w-full px-10 py-20 border border-dotted border-p-600 gap-9"
+          >
+            <!-- tiêu đề -->
+            <div data-aos="fade-down">
+              <h2 class="sub_heading">Có câu hỏi?</h2>
+              <h1 class="main_heading">Liên hệ EcoPlant tại</h1>
+            </div>
+
+            <!-- địa chỉ -->
+            <div class="contact-info">
+              <div>
+                <img
+                  src="./assets/building.svg"
+                  alt="building"
+                  class="size-4"
+                />
+                <h1>Địa Chỉ</h1>
+              </div>
+
+              <p>
+                01 Đ.Võ Văn Ngân, Linh Chiểu, Thủ Đức, Hồ Chí Minh
+              </p>
+            </div>
+
+            <!-- email -->
+            <div class="contact-info">
+              <div>
+                <img
+                  src="./assets/mail.svg"
+                  alt="building"
+                  class="size-4"
+                />
+                <h1>Email</h1>
+              </div>
+
+              <p>ecoplant.work@gmail.com</p>
+            </div>
+
+            <!-- số điện thoại -->
+            <div class="contact-info">
+              <div>
+                <img
+                  src="./assets/phone.svg"
+                  alt="building"
+                  class="size-4"
+                />
+                <h1>Điện Thoại</h1>
+              </div>
+
+              <p>+84 917368337</p>
+            </div>
+          </div>
+
+          <!-- form đăng ký theo dõi -->
+          <div
+            class="relative text-center flex flex-col items-center w-full flex-1 h-[515px] px-10 py-20 gap-9 border border-p-600 overflow-clip"
+          >
+            <!-- heading -->
+            <div data-aos="fade-down">
+              <h2 class="sub_heading">Cập nhập bản tin</h2>
+              <h1 class="main_heading">Đăng ký theo dõi</h1>
+            </div>
+
+            <p>Đăng ký nhận bản tin của chúng tôi và cập nhật thông tin.</p>
+
+            <!-- email input -->
+            <div class="relative w-[250px] md:w-[350px]">
+              <input
+                type="email"
+                placeholder="Nhập địa chỉ email của bạn"
+                class="w-full px-12 py-3 border border-p-600"
+              />
+              <img
+                src="./assets/mail2.svg"
+                alt="mail icon"
+                class="absolute -translate-y-1/2 top-1/2 left-4"
+              />
+            </div>
+
+            <!-- nút theo dõi -->
+            <button class="flex-none !border-p-600 w-[250px] md:w-[350px]">
+              <div class="capitalize btn !bg-p-600 hover:!bg-p-700">
+                <span class="w-full text-center">Đồng Ý Theo Dõi</span>
+              </div>
+            </button>
+
+            <!-- hình decor -->
+            <img
+              src="./assets/contact.png"
+              alt="decor"
+              class="absolute -bottom-20 -right-20 w-[400px] opacity-15 -z-10"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!----------------- 
+    Footer
+    ------------------>
+    <footer class="bg-p-950">
+      <div class="container text-white/50">
+        <p class="text-center mt-9">© EcoPlant's Copyright 2025</p>
+      </div>
+    </footer>
+  </body>
+</html>
